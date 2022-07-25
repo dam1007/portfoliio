@@ -1,0 +1,404 @@
+/* 모바일 */
+@media (max-width: 768px){
+   
+    #header .gnb {
+        display: none;
+    }
+    #header .contact {
+        display: none;
+    }
+    #header .header_inner {
+        justify-content: flex-end;
+        padding: 5px 0;
+    }
+    #header .btn-menu {
+        text-indent: -9999px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: url(../img/menu.png) no-repeat;
+        background-size: cover;
+        display: block;
+    }
+    #header .mgnb {
+        display: block;
+    }
+
+    .section1 {
+        padding: 0 15px;
+    }
+    .section1 .main_visual {
+        /* display: block; */
+        /* padding-top: 41px; */
+        flex-direction: column;
+    }
+    .section1 .main_visual h2 {
+        text-align: left;
+        margin-top: 0;
+        width: 100%;
+    }
+    .section1 .main_visual h2 em {
+        line-height: 1;
+        font-size: 18vw
+    }
+    .section1 .main_visual h2 em:first-child {
+        padding-right: 0;
+        /* padding-left: 4vw; */
+    }
+    .section1 .main_visual h2 em:nth-child(2) {
+        padding-left: 0;
+        /* padding-top: 2vh; */
+    }
+    .section1 .main_visual .main-bot {
+        position: static;
+    }
+    .section1 .main_visual .scroll {
+        left: 15px;
+        bottom: 15px;
+        width: 20vw;
+        height: 20vw;
+        font-size: 2.7vw;
+        display: none;
+    }
+    .section1 .main_visual .image {
+        position: static;
+        transform: none;
+        width: 40%;
+        /* width: 30vh; */
+        margin: 0 auto;
+        padding-top: 2vh;
+    }
+    .section1 .main_visual .text {
+        position: static;
+        /* width: 60%; */
+        /* align-self: center; */
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 4vh;
+    }
+    .section1 .main_visual .text br {
+        display: none;
+    }
+
+
+    /* section1 - about */
+    .section1 .about {
+        padding: 10vw 0 20vw;
+    }
+    .section1 .about h2 {
+        line-height: 1;
+        font-size: 18vw;
+    }
+    .section1 .about .container {
+        flex-direction: column;
+        margin-top: -5vw;
+        width: 100%;
+        height: auto;
+    }
+    .section1 .about .container article {
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+    .section1 .about .container article h3 {
+        /* height: 8vw; */
+        /* font-size: 6vw; */
+        height: auto;
+        font-size: 7vw;
+        line-height: 1.5;
+        padding-left: 1.8vw;
+    }
+    .section1 .about .container article h3 span {
+        /* width: 6vw;
+        height: 6vw; */
+        width: 8vw;
+        height: 8vw;
+    }
+    .section1 .about .container article > div {
+        /* height: 28vh; */
+        /* height: auto; */
+        height: 500px;
+        background-position: 50% 30%;
+        /* padding: 3vw; */
+        padding: 15px;
+        padding-bottom: 80px;
+    }
+
+    /* section2 */
+    .pin-wrap {
+        padding: 15px;
+        padding-top: 0;
+    }
+    .section2 .title, .section4 .title  {
+        /* height: auto; */
+        height: 35%;
+        /* padding: 2vh; */
+        padding: 15px;
+    }
+    .section2 .title h2, .section4 .title h2 {
+        font-size: 16vw;
+        
+    }
+    .secsub {
+        min-width: auto;
+        width: 100vw;
+        /* width: calc(100vw - 45px); */
+        height: 100%;
+        border: none;
+        margin-right: 15px;
+    }
+
+    .secsub .secsub-top {
+        display: block;
+        height: auto;
+        background: transparent;
+        /* padding: 15px; */
+        height: 35%;
+        margin-bottom: 20px;
+    }
+    .secsub .secsub-top h2 {
+        font-family: 'NewYork';
+        line-height: 0.9;
+        font-size: 18vw;
+        color: transparent;
+    }
+    .secsub .secsub-bot {
+        height: calc(65% - 20px);
+        border: 1px solid #000;
+    }
+    .section2 .subtit, .section4 .subtit {
+        height: auto;
+        border-bottom: 1px solid #000;
+        padding: 0 15px;
+    }
+    .section2 .subtit h3, .section4 .subtit h3 {
+        /* font-size: 6vw; */
+        font-size: 35px;
+    }
+    .section2 .subcont, .section4 .subcont {
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid #000; */
+        border-top: none;
+        padding: 15px;
+        height: calc(100% - 52.5px);
+    }
+    .section2 .subcont p, .section4 .subcont p  {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .more {
+        width: 40%;
+        height: 50%;
+    }
+    .more h4 {
+        padding: 0 15px;
+    }
+    .more h4 figure {
+        height: 7vw;
+        width: 6.7vw;
+    }
+    /* .more {
+        width: 70%;
+        border-radius: 50px;
+        overflow: hidden;
+        background: #E95C43;
+    }
+    .more h4 {
+        height: auto;
+        padding: 5px 10px;
+        font-size: 15px;
+        display: none;
+    }
+    .more h4 figure {
+        height: 5vh;
+        width: 4.7vh;
+    }
+    .more h4 span {
+        margin-left: 15px;
+    }
+    .more div {
+        height: auto;
+        font-size: 15px;
+    }
+    .more div a {
+        padding: 5px 0;
+    } */
+
+
+    /* section3 */
+    .section3 {
+        padding-bottom: 260px;
+    }
+    .section3 article {
+        height: auto;
+        padding: 3vh 15px;
+    }
+    .section3 .subtit3 {
+        height: 38vh;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .section3 .subtit3 h2 {
+        font-size: 8vw;
+    }
+    .section3 .sec3sub .key {
+        flex-direction: column;
+    }
+    .section3 .sec3sub .key .key-left {
+        padding: 8px 15px;
+    }
+    .section3 .sec3sub .key .key-right {
+        width: 100%;
+    }
+    .section3 .sec3sub .key .key-right button {
+        padding: 8px 0;
+    }
+
+    .section3 .sec3sub .subcont {
+        padding: 15px;
+        overflow-y: auto;
+    }
+
+    .note li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .note li:last-child {
+        margin-bottom: 0;
+    }
+    .note h4 {
+        padding-left: 25px;
+    }
+    .note p {
+        font-size: 15px;
+    }
+
+
+
+    /* section5 */
+    .section5 article {
+        flex-direction: column;
+        padding: 3vh 15px;
+    }
+    .section5 article .left {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .section5 article .left h2 {
+        font-size: 8vw;
+    }
+
+    .section5 article .right {
+        width: 100%;
+    }
+    .section5 article .right .key div {
+        padding: 8px 15px;
+    }
+    .section5 article .right .key .view {
+        padding: 8px 0;
+    }
+    
+    .section5 article .right .subcont > ul li:last-child {
+        margin-bottom: 0;
+    }
+    .section5 article .right .subcont {
+        padding: 15px;
+    }
+    .section5 article .right .subcont h4 {
+        padding-left: 25px;
+    }
+    .section5 article .right .subcont h4::before {
+        left: 0;
+    }
+
+
+
+    /* section6 */
+    .section6 .container {
+        padding: 0 15px;
+    }
+    .section6 h2 {
+        font-size: 18vw;
+    }
+    .section6 article {
+        width: 100%;
+    }
+
+    .section6 article .title {
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .section6 article h3 {
+        font-size: 35px;
+        padding: 5px 15px;
+    }
+    .section6 article h3 span {
+        width: 8vw;
+        height: 8vw;
+    }
+    .section6 article .title ul {
+        padding: 5px 15px;
+        width: 100%;
+        background: #000;
+    }
+
+    .section6 article .sec6cont {
+        height: 65vw;
+        padding: 15px;
+    }
+    .section6 article .sec6cont .subcont {
+        padding: 15px;
+        overflow-y: scroll;
+    }
+
+    /* section7 */
+    .section7 {
+        padding: 0 15px;
+    }
+    .section7 .container {
+        width: 100%;
+    }
+    .section7 h2 {
+        font-size: 18vw;
+    }
+
+    .section7 .container h3 {
+        padding: 5px 15px;
+        font-size: 35px;
+        line-height: 1;
+    }
+    .section7 .container h3 span {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .section7 .container .cont {
+        flex-direction: column;
+    }
+    .section7 .container .profile {
+        width: 100%;
+    }
+    .section7 .container .contact {
+        width: 100%;
+        border: none;
+    }
+    .contact .link {
+        padding: 5px 0;
+    }
+    .desc {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .contact .mail {
+        padding: 15px;
+    }
+
+    /* full */
+    #full {
+        display: none;
+    }
+}
