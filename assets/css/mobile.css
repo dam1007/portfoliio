@@ -20,9 +20,72 @@
         background-size: cover;
         display: block;
     }
-    #header .mgnb {
-        display: block;
+
+    /* 햄버거메뉴 */
+    .mgnb {
+        position: fixed;
+        right: 0;
+        /* top: 41px; */
+        background: #000;
+        /* display: block; */
+        width: 80%;
+        /* width: 0%; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 110px;
+        z-index: 1000;
+        display: none;
     }
+    .mgnb .mgnb-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        text-indent: -9999px;
+        /* display: none; */
+    }
+    .mgnb .mgnb-close:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background: #999;
+        transform: rotate(45deg) translateY(-24%) translateX(-5%);
+    }
+    .mgnb .mgnb-close:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background: #999;
+        transform: rotate(135deg) translateY(43%) translateX(-3%);
+    }
+
+    /* .mgnb li {border: 1px solid red;} */
+    .mgnb li a {
+        display: block;
+        /* width: 80%; */
+        color: #fff;
+        text-align: right;
+        padding: 20px 0;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+    .mgnb li a:hover {
+        color: #1E27F0;
+    }
+
 
     .section1 {
         padding: 0 15px;
@@ -42,8 +105,8 @@
         font-size: 18vw
     }
     .section1 .main_visual h2 em:first-child {
-        padding-right: 0;
-        /* padding-left: 4vw; */
+        /* padding-right: 0; */
+        padding-left: 4vw;
     }
     .section1 .main_visual h2 em:nth-child(2) {
         padding-left: 0;
@@ -115,12 +178,14 @@
     }
     .section1 .about .container article > div {
         /* height: 28vh; */
-        /* height: auto; */
-        height: 500px;
+        height: 80vw;
         background-position: 50% 30%;
         /* padding: 3vw; */
         padding: 15px;
         padding-bottom: 80px;
+    }
+    .section1 .about article p {
+        font-size: 16px;
     }
 
     /* section2 */
@@ -135,7 +200,7 @@
         padding: 15px;
     }
     .section2 .title h2, .section4 .title h2 {
-        font-size: 16vw;
+        font-size: 15vw;
         
     }
     .secsub {
@@ -188,8 +253,10 @@
         margin-bottom: 15px;
     }
     .more {
-        width: 40%;
-        height: 50%;
+        /* width: 40%; */
+        /* height: 50%; */
+        width: 50%;
+        height: 60%;
     }
     .more h4 {
         padding: 0 15px;
@@ -331,6 +398,7 @@
         flex-direction: column;
         padding: 0;
         align-items: flex-start;
+        border-bottom: none;
     }
     .section6 article h3 {
         font-size: 35px;

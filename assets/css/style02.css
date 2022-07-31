@@ -29,14 +29,13 @@ body {
     fill: #E95C43;
 }
 .loader-text {
-    font-family: fantasy;
     font-size: 18px;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: #E95C43;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 145%);
+    transform: translate(-50%, 200%);
     line-height: 1;
 }
 
@@ -47,9 +46,6 @@ body {
     display: flex;
     left: 0;
 }
-.has-scroll-smooth body {
-
-}
 
 .section4 .pin-wrap {
     height: 100vh;
@@ -59,7 +55,6 @@ body {
 }
 .section4 .pin-wrap > div {
     /* min-width: 60vw; */
-    
 }
 .section6 .pin-wrap {
     /* height: 100vh; */
@@ -133,7 +128,7 @@ body {
 #header .btn-menu {
     display: none;
 }
-#header .mgnb {
+.mgnb {
     display: none;
 }
 
@@ -222,25 +217,25 @@ body {
 }
 .section1 .about .container {
     height: 60vw;
-    width: 73vw;
+    width: 75vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -7vw;
 }
-.section1 .about .container article {
+.section1 .about article {
     width: 30%;
     border: 1px solid #000;
 }
-.section1 .about .container article:first-child {
+.section1 .about article:first-child {
     align-self: flex-start;
 }
-.section1 .about .container article:last-child {
+.section1 .about article:last-child {
     align-self: flex-end;
 }
 
-.section1 .about .container article h3 {
+.section1 .about article h3 {
     height: 6vw;
     line-height: 2;
     padding-left: 0.8vw;
@@ -253,33 +248,56 @@ body {
     background: #dbdbdb;
     
 }
-.section1 .about .container article h3 span {
+.section1 .about article h3 span {
     display: inline-block;
     width: 4vw;
     height: 4vw;
     vertical-align: middle;
 }
 
-.section1 .about .container article div {
-    height: 23vw;
+.section1 .about article div {
+    height: 25vw;
     background: url(../img/img01.jpg) no-repeat;
     background-size: cover;
     padding: 1.3vw;
+    position: relative;
 }
-.section1 .about .container article:nth-child(2) div {
+.section1 .about article div:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.3;
+}
+.section1 .about article:nth-child(2) div {
     background-image: url(../img/img02.jpg);
 }
-.section1 .about .container article:nth-child(3) div {
+.section1 .about article:nth-child(3) div {
     background-image: url(../img/img03.jpg);
 }
 
-.section1 .about .container article div p {
+.section1 .about article p {
     font-family: 'GmarketSans';
     font-weight: 300;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.3vw;
     color: #fff;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
+.section1 .about article:hover p {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+.section1 .about article:hover div:before {
+    opacity: 1;
+}
  
 /* section2 - site */
 .section2, .section4 {
@@ -816,7 +834,7 @@ body {
 }
 .section5 article .left {
     width: 60%;
-    padding: 1vw 2vw;
+    padding: 2vw;
     background: url(../img/script02.jpg) no-repeat 50% 50%;
     background-size: cover;
     border: 1px solid #000;
@@ -1009,7 +1027,7 @@ body {
     padding: 0 2vw;
 }
 .section6 article {
-    width: 73vw;
+    width: 75vw;
     border: 1px solid #000;
     margin-bottom: 5vw;
 }
@@ -1018,6 +1036,9 @@ body {
 }
 .section6 article:nth-child(3) {
     align-self: flex-end;
+}
+.section6 article:nth-child(4) {
+    align-self: flex-start;
 }
 
 
@@ -1075,7 +1096,7 @@ body {
 }
 
 .section6 article .sec6cont {
-    height: 25vw;
+    height: 28vw;
     background: url(../img/mockup06.jpg) no-repeat 50% 0;
     background-size: cover;
     padding: 1.3vw;
@@ -1083,6 +1104,9 @@ body {
 }
 .section6 article:nth-child(2) .sec6cont {
     background-image: url(../img/mockup07-2.jpg);
+}
+.section6 article:nth-child(3) .sec6cont {
+    background-image: url(../img/mockup08.jpg);
 }
 
 /* 사이트 설명 */

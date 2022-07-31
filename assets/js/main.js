@@ -1,6 +1,6 @@
 const header = document.querySelector('#header');
 window.addEventListener("load", function() {
-
+    //로딩소스
     let loader = document.querySelector('.loader');
     let loaderText = document.querySelector('.loader-text');
     let num = 0;
@@ -20,10 +20,9 @@ window.addEventListener("load", function() {
             setTimeout(() => {
                 loader.style.display = 'none';
 
-                // var tl = gsap.timeline();
                 gsap.from(header, { duration: 0.8, opacity: 0, delay: 0.1,});
                 gsap.from(mainText, { duration: 0.8, y: -20, opacity: 0, delay: 1,});
-                gsap.from(mainImg, { duration: 1.5, y: 30, opacity: 0, delay: 1.5,});
+                gsap.from(mainImg, { duration: 1.5, opacity: 0, delay: 1.5,});
                 gsap.from(mainText2, { duration: 1.8, x: 20, opacity: 0, delay: 2,});
                 gsap.from(scroll, { duration: 2, x: -40, opacity: 0, delay: 2.5,});
                 
@@ -115,7 +114,7 @@ header.querySelectorAll('.gnb>li>a').forEach(e => {
 }); */
 
 
-// 햄버거메뉴
+//햄버거메뉴
 let menu = document.querySelector('#header .btn-menu');
 let menuClose = document.querySelector('.mgnb .mgnb-close');
 let mgnb = document.querySelector('.mgnb');
@@ -158,7 +157,6 @@ tabmenu.forEach((el, index) => {
         
         let btnTarget = e.target.parentNode;
         let idx = btnTarget.dataset.indexNumber;
-        //console.log(e.target,btnTarget, idx);
         for(let i = 0; i < el.children.length; i++){
             el.children[i].classList.remove('active');
             tabconAll[index].children[i].style.display = 'none';
