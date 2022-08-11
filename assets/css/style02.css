@@ -1106,6 +1106,9 @@ body {
     background-image: url(../img/mockup07-2.jpg);
 }
 .section6 article:nth-child(3) .sec6cont {
+    background-image: url(../img/mockup07-2.jpg);
+}
+.section6 article:nth-child(4) .sec6cont {
     background-image: url(../img/mockup08.jpg);
 }
 
