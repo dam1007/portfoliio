@@ -1,34 +1,63 @@
 const header = document.querySelector('#header');
-window.addEventListener("load", function() {
-    //로딩소스
-    let loader = document.querySelector('.loader');
-    let loaderText = document.querySelector('.loader-text');
-    let num = 0;
-    let interval = setInterval(progress, 2000/70);
+
+//로딩소스
+let loader = document.querySelector('.loader');
+let loaderText = document.querySelector('.loader-text');
+let num = 0;
+let interval = setInterval(progress);
+
+let mainText = document.querySelector('.main-text');
+let mainImg = document.querySelector('.main-bot .image');
+let mainText2 = document.querySelector('.main-bot .text');
+let scroll = document.querySelector('.main-bot .scroll');
+
+imagesLoaded( document.querySelector('html'), interval);
     
-    let mainText = document.querySelector('.main-text');
-    let mainImg = document.querySelector('.main-bot .image');
-    let mainText2 = document.querySelector('.main-bot .text');
-    let scroll = document.querySelector('.main-bot .scroll');
+function progress() {
+    num++;
+    loaderText.innerText = num + '%';
 
-    function progress(){
-        num++;
-        loaderText.innerText = num + '%';
-
-        if(num === 100){
-            clearInterval(interval);
-            setTimeout(() => {
-                loader.style.display = 'none';
-
-                gsap.from(header, { duration: 0.8, opacity: 0, delay: 0.1,});
-                gsap.from(mainText, { duration: 0.8, y: -20, opacity: 0, delay: 1,});
-                gsap.from(mainImg, { duration: 1.5, opacity: 0, delay: 1.5,});
-                gsap.from(mainText2, { duration: 1.8, x: 20, opacity: 0, delay: 2,});
-                gsap.from(scroll, { duration: 2, x: -40, opacity: 0, delay: 2.5,});
-                
-            }, 500);
-        }
+    if(num === 100){
+        clearInterval(interval);
+        setTimeout(() => {
+            loader.style.display = 'none';
+            
+            gsap.from(header, { duration: 0.8, opacity: 0, delay: 0.1,});
+            gsap.from(mainText, { duration: 0.8, y: -20, opacity: 0, delay: 1,});
+            gsap.from(mainImg, { duration: 1.5, opacity: 0, delay: 1.5,});
+            gsap.from(mainText2, { duration: 1.8, x: 20, opacity: 0, delay: 2,});
+            gsap.from(scroll, { duration: 2, x: -40, opacity: 0, delay: 2.5,});
+            
+        }, 500);
     }
+}
+
+/* document.querySelector('html').imagesLoaded(function(){
+    // interval();
+    alert('ㅇㅇ');
+}); */
+
+/* function progress(){
+    num++;
+    loaderText.innerText = num + '%';
+
+    if(num === 100){
+        clearInterval(interval);
+        setTimeout(() => {
+            loader.style.display = 'none';
+
+            gsap.from(header, { duration: 0.8, opacity: 0, delay: 0.1,});
+            gsap.from(mainText, { duration: 0.8, y: -20, opacity: 0, delay: 1,});
+            gsap.from(mainImg, { duration: 1.5, opacity: 0, delay: 1.5,});
+            gsap.from(mainText2, { duration: 1.8, x: 20, opacity: 0, delay: 2,});
+            gsap.from(scroll, { duration: 2, x: -40, opacity: 0, delay: 2.5,});
+            
+        }, 500);
+    }
+} */
+
+
+window.addEventListener("load", function() {
     
 
     //locomitive
